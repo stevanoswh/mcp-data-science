@@ -1,0 +1,23 @@
+
+version: '3.8'
+services:
+  dataops:
+    build: .
+    command: python -m servers.dataops
+    ports:
+      - "8001:8000"
+  feature:
+    build: .
+    command: python -m servers.feature
+    ports:
+      - "8002:8000"
+  trainer:
+    build: .
+    command: python -m servers.trainer
+    ports:
+      - "8003:8000"
+  deployer:
+    build: .
+    command: python -m servers.deployer
+    ports:
+      - "8004:8000"

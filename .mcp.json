@@ -1,0 +1,25 @@
+
+{
+    "servers": [
+        {
+            "name": "dataops",
+            "start": "python -m servers.dataops",
+            "url": "http://localhost:8001"
+        },
+        {
+            "name": "feature",
+            "start": "python -m servers.feature",
+            "url": "http://localhost:8002"
+        },
+        {
+            "name": "trainer",
+            "start": "python -m servers.trainer",
+            "url": "http://localhost:8003"
+        },
+        {
+            "name": "deployer",
+            "start": "python -m servers.deployer",
+            "url": "http://localhost:8004"
+        }
+    ]
+}

@@ -1,0 +1,7 @@
+fastmcp>=2,<3
+scikit-learn
+pandera
+pandas
+numpy
+pytest
+pytest-asyncio
